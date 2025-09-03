@@ -11,8 +11,6 @@ class UsersRepository {
   }
 
   async register({ username, email, password }) {
-    console.log(username, email, password);
-
     try {
       const [result] = await this.pool.query(
         "INSERT INTO Users (username, email, password) VALUES (?, ?, ?)",
