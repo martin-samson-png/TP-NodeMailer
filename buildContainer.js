@@ -1,7 +1,7 @@
 import getPool from "./config/mariadb.js";
-import UsersRepository from "./users/users.repository.js";
-import UsersService from "./users/users.service.js";
-import UsersController from "./users/users.controller.js";
+import UsersRepository from "./repository/users.repository.js";
+import UsersService from "./services/users.service.js";
+import UsersController from "./controller/users.controller.js";
 
 const buildContainer = () => {
   const pool = getPool();
